@@ -1,4 +1,4 @@
-# `jdk-build` - **Github Action**
+# `action-jdk-build` - **Github Action**
 
 This action cache maven dependencies, add custom env variables and build maven project
 
@@ -22,7 +22,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Build
-            uses: rbkmoney/build-actions/packages/jdk-build@v1.0.0
+            uses: rbkmoney/action-jdk-build@v1
             with:
               mvn-args: '-DjvmArgs="-Xmx256m"'
 ```
